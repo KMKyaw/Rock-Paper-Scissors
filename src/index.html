@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <p>Select Your Choice</p>
+    <table>
+        <tr>
+            <td><Button id="rock" class="gestures-button" onClick="randomGesture(0)"><img class="gestures" src ="./img/Rock.png" ></Button></td>
+        </tr>
+        <tr>
+            <td><Button id="paper" class="gestures-button" onClick="randomGesture(1)"><img class="gestures" src="./img/Paper.png" ></Button></td>
+        </tr>
+        <tr>
+            <td><Button id="scissors" class="gestures-button" onClick="randomGesture(2)"><img class="gestures" src="./img/Scissors.png"></Button></td>
+        </tr>
+    </table>
+    <p id="user-hand">You Chose</p>
+    <p id="bot-hand">The Opponent Chose</p>
+    <img id="user-select" src="./img/Pregame.gif" alt="Answer">
+    <img id="ans" src="./img/Pregame.gif" alt="Answer">
+    <p id="result">RESULT</p>
+    <button id="play-again" onclick="location.reload()">Play again</button>
+</body>
+</html>
